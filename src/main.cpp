@@ -89,7 +89,8 @@ int main()
         gpio_put(LED_PIN, gpio_get(BUTTON_PIN));
         start_connect_to_wifi = gpio_get(BUTTON_PIN);
 
-        if(button_state.ButtonPressed) {
+        if(button_state.ButtonPressed) 
+        {
             if(!is_connected_to_wifi) 
             {
                 if(start_connect_to_wifi) 
