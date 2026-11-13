@@ -9,6 +9,7 @@
 #include "pico/multicore.h"
 #include "pico/status_led.h"
 #include "wifi-connector.h"
+#include "desk-height.h"
 #include <atomic>
 
 
@@ -77,15 +78,19 @@ int main()
     gpio_pull_down(BUTTON_PIN);
     gpio_set_irq_enabled_with_callback(BUTTON_PIN, GPIO_IRQ_EDGE_RISE, true, &button_isr);
 
-   
+    // Potentiometer (desk height) and the return-to-original button
+    desk_height_init();
 
     // used to signal the connection status. Simply for feedback
     // starts a routine on core 1 (not the main core 0)
     multicore_launch_core1(signal_connecting_to_wifi);
-    std::cout << "Awaiting command. Press button to connect to WIFI \n" << std::endl;
+    std::cout << "Awaiting command. Press button to connect to WIFI, turn the knob to set the height \n" << std::endl;
 
     while (true) 
     {   
+        // Prints the knob percentage when turned; returns the height when the return button is pressed
+        desk_height_update();
+
         gpio_put(LED_PIN, gpio_get(BUTTON_PIN));
         start_connect_to_wifi = gpio_get(BUTTON_PIN);
 

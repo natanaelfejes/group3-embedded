@@ -31,11 +31,12 @@ set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
 
 # TODO - Make sure the file is properly defined and configured with what's needed
-add_executable(desk_pico src/main.cpp src/wifi-connector.cpp)
+add_executable(desk_pico src/main.cpp src/wifi-connector.cpp src/desk-height.cpp)
 
 target_link_libraries(desk_pico
         PRIVATE    
         pico_stdlib
+        hardware_adc
         pico_cyw43_arch_lwip_threadsafe_background 
         pico_lwip_http
         pico_multicore
