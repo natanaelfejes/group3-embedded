@@ -10,25 +10,25 @@
 namespace
 {
     //Dropping 3 bits for noise reduction
-    constexpr int DROPPED_BITS = 3;
-    constexpr int LEVEL_MAX = (4096 >> DROPPED_BITS) - 1; // 511
+    constexpr int DROPPED_BITS = 5;
+    constexpr int LEVEL_MAX = (4096 >> DROPPED_BITS) - 1; // highest level after dropping bits
    
     // if the difference between current status and desired is under this number, the desk doesnt move
     constexpr int ERROR_LEVEL = 2;  
 
-    int original_level = 0; // knob level at power-on
-    int desired_level = 0;  // what the knob or the return button last asked for
+    float saved_position = 0.0f; // 0.0 .. 1.0, converted to a level when used
+    int desired_level = 0;      
+    int last_knob_level = 0;    
     bool button_was_pressed = false;
-
-    // Knob position as a 9-bit level, 0..LEVEL_MAX.
-    int read_pot_level()
-    {
-        return adc_read() >> DROPPED_BITS;
-    }
 
     float as_fraction(int level)
     {
         return static_cast<float>(level) / LEVEL_MAX;
+    }
+
+    int as_level(float position)
+    {
+        return static_cast<int>(position * LEVEL_MAX + 0.5f);
     }
 }
 
@@ -45,31 +45,35 @@ void desk_height_init()
     // Print positions as 0.000 .. 1.000.
     std::cout << std::fixed << std::setprecision(3);
 
-    desired_level = original_level;
-    std::cout << "Original position: " << as_fraction(original_level) << std::endl;
+    desired_level = as_level(saved_position);
+    std::cout << "Saved position: " << saved_position * 100 << "%" << std::endl;
 }
 
 void desk_height_update()
 {
     // Knob turned 
-    const int level = read_pot_level();
-    if (std::abs(level - desired_level) > ERROR_LEVEL)
+    const int raw = adc_read();              // 12-bit, 0..4095
+    const int level = raw >> DROPPED_BITS;   // 7-bit, 0..LEVEL_MAX
+    if (std::abs(level - last_knob_level) > ERROR_LEVEL)
     {
+        last_knob_level = level;
         desired_level = level;
-        std::cout << "Desired position: " << as_fraction(desired_level) << std::endl;
+        std::cout << "Desired position: " << as_fraction(desired_level) * 100<< "%"
+                  << "  (raw: " << raw << ", level - "<<DROPPED_BITS<<" bits dropped " << level << ")" << std::endl;
     }
 
     // Return button pressed
     const bool pressed = gpio_get(RETURN_BUTTON_PIN);
     if (pressed && !button_was_pressed)
     {
-        desired_level = original_level;
-        std::cout << "Returning to original position: " << as_fraction(desired_level) << " (original)" << std::endl;
+        desired_level = as_level(saved_position);
+        std::cout << "Returning to saved position: " << as_fraction(desired_level) * 100 << "%"
+                  << "  (saved " << saved_position << ", level " << desired_level << ")" << std::endl;
     }
     button_was_pressed = pressed;
 }
 
-float desk_desired_position()
+float get_desk_desired_position()
 {
     return as_fraction(desired_level);
 }
