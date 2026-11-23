@@ -1,0 +1,252 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/find_compiler.cmake:12 (find_program)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/find_compiler.cmake:39 (pico_find_compiler)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/pico_gcc_common.cmake:25 (pico_find_compiler_with_triples)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/pico_arm_gcc_common.cmake:20 (include)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/pico_arm_cortex_m0plus_gcc.cmake:7 (include)"
+      - "C:/Users/kaloy/.pico-sdk/cmake/v4.3.4/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:146 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "PICO_COMPILER_CC"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-gcc"
+    candidate_directories:
+      - "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/bin/"
+      - "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/"
+    searched_directories:
+      - "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/bin/arm-none-eabi-gcc.com"
+    found: "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/bin/arm-none-eabi-gcc.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\kaloy\\.pico-sdk\\cmake\\v4.3.4\\bin"
+        - "C:\\Program Files\\Microsoft\\jdk-25.0.0.36-hotspot\\bin"
+        - "C:\\Python313\\Scripts\\"
+        - "C:\\Python313\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\MATLAB\\R2025a\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\kaloy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Roaming\\npm"
+        - "C:\\Users\\kaloy\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\flutter\\flutter\\bin"
+        - "C:\\Users\\kaloy\\.dotnet\\tools"
+        - "C:\\Users\\kaloy\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\kaloy\\.dotnet\\tools"
+        - "C:\\Users\\kaloy\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/find_compiler.cmake:12 (find_program)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/find_compiler.cmake:39 (pico_find_compiler)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/pico_gcc_common.cmake:27 (pico_find_compiler_with_triples)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/pico_arm_gcc_common.cmake:20 (include)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/pico_arm_cortex_m0plus_gcc.cmake:7 (include)"
+      - "C:/Users/kaloy/.pico-sdk/cmake/v4.3.4/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:146 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "PICO_COMPILER_CXX"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-g++"
+    candidate_directories:
+      - "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/bin/"
+      - "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/"
+    searched_directories:
+      - "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/bin/arm-none-eabi-g++.com"
+    found: "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/bin/arm-none-eabi-g++.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\kaloy\\.pico-sdk\\cmake\\v4.3.4\\bin"
+        - "C:\\Program Files\\Microsoft\\jdk-25.0.0.36-hotspot\\bin"
+        - "C:\\Python313\\Scripts\\"
+        - "C:\\Python313\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\MATLAB\\R2025a\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\kaloy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Roaming\\npm"
+        - "C:\\Users\\kaloy\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\flutter\\flutter\\bin"
+        - "C:\\Users\\kaloy\\.dotnet\\tools"
+        - "C:\\Users\\kaloy\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\kaloy\\.dotnet\\tools"
+        - "C:\\Users\\kaloy\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/find_compiler.cmake:12 (find_program)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/find_compiler.cmake:39 (pico_find_compiler)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/pico_gcc_common.cmake:29 (pico_find_compiler_with_triples)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/pico_arm_gcc_common.cmake:20 (include)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/pico_arm_cortex_m0plus_gcc.cmake:7 (include)"
+      - "C:/Users/kaloy/.pico-sdk/cmake/v4.3.4/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:146 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "PICO_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-objcopy"
+    candidate_directories:
+      - "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/bin/"
+      - "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/"
+    searched_directories:
+      - "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/bin/arm-none-eabi-objcopy.com"
+    found: "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/bin/arm-none-eabi-objcopy.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\kaloy\\.pico-sdk\\cmake\\v4.3.4\\bin"
+        - "C:\\Program Files\\Microsoft\\jdk-25.0.0.36-hotspot\\bin"
+        - "C:\\Python313\\Scripts\\"
+        - "C:\\Python313\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\MATLAB\\R2025a\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\kaloy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Roaming\\npm"
+        - "C:\\Users\\kaloy\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\flutter\\flutter\\bin"
+        - "C:\\Users\\kaloy\\.dotnet\\tools"
+        - "C:\\Users\\kaloy\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\kaloy\\.dotnet\\tools"
+        - "C:\\Users\\kaloy\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/find_compiler.cmake:12 (find_program)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/find_compiler.cmake:39 (pico_find_compiler)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/pico_gcc_common.cmake:30 (pico_find_compiler_with_triples)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/util/pico_arm_gcc_common.cmake:20 (include)"
+      - "C:/Users/kaloy/.pico-sdk/sdk/2.3.1/cmake/preload/toolchains/pico_arm_cortex_m0plus_gcc.cmake:7 (include)"
+      - "C:/Users/kaloy/.pico-sdk/cmake/v4.3.4/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:146 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "PICO_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-objdump"
+    candidate_directories:
+      - "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/bin/"
+      - "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/"
+    searched_directories:
+      - "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/bin/arm-none-eabi-objdump.com"
+    found: "C:/Users/kaloy/.pico-sdk/toolchain/15_2_Rel1/bin/arm-none-eabi-objdump.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\kaloy\\.pico-sdk\\cmake\\v4.3.4\\bin"
+        - "C:\\Program Files\\Microsoft\\jdk-25.0.0.36-hotspot\\bin"
+        - "C:\\Python313\\Scripts\\"
+        - "C:\\Python313\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\MATLAB\\R2025a\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\kaloy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\kaloy\\AppData\\Roaming\\npm"
+        - "C:\\Users\\kaloy\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\flutter\\flutter\\bin"
+        - "C:\\Users\\kaloy\\.dotnet\\tools"
+        - "C:\\Users\\kaloy\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\kaloy\\.dotnet\\tools"
+        - "C:\\Users\\kaloy\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/kaloy/.pico-sdk/cmake/v4.3.4/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:207 (message)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      The target system is: PICO -  - cortex-m0plus
+      The host system is: Windows - 10.0.26200 - AMD64
+...
